@@ -25,4 +25,5 @@ urlpatterns = [
     path('api/v1/productlist', GeneralProductView.as_view()),
     path('api/v1/productlist/<str:name>', DetailProductView.as_view()),
     path('register/', RegisterUserView.as_view(), name='register'),
+    path('auth/', AuthUserView.as_view(), name='auth')
 ]
